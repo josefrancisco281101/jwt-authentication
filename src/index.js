@@ -1,11 +1,11 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import bodyParser from 'body-parser';
+
 
 const app = express();
 const PORT = 3000;
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 const users = [
     { id: 1, username: 'user1', password: 'password1' },
